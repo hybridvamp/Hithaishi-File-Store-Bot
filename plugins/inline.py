@@ -26,7 +26,7 @@ async def answer(bot, query):
     if not await inline_users(query):
         await query.answer(results=[],
                            cache_time=0,
-                           switch_pm_text='🥲 USE Group Bro This for Admin Only 🤠',
+                           switch_pm_text='👻 𝗛𝗘𝗬!! 𝗨𝗦𝗘 𝗚𝗥𝗢𝗨𝗣, 𝗧𝗛𝗜𝗦 𝗜𝗦 𝗙𝗢𝗥 🅐︎🅓︎🅜︎🅘︎🅝︎🅢︎ 𝗢𝗡𝗟𝗬 😎',
                            switch_pm_parameter="hehe")
         return
 
