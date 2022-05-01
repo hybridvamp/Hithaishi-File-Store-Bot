@@ -782,7 +782,7 @@ async def advantage_spell_chok(msg):
     s = await message.reply_sticker("CAACAgUAAxkBAAED9-hiELXYEnJKqYDHyjr88gwI0nquPgACCgYAAjCWgVTry1pKvQWG0iME",
                     reply_markup=InlineKeyboardMarkup(btn))
 await asyncio.sleep(10)
-s.delete()
+await s.delete()
 
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
