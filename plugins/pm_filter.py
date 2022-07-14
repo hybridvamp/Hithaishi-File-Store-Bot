@@ -374,24 +374,24 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     ms = await client.send_cached_media(
                         chat_id=CH_FILTER,
                         file_id=file_id,
-                        caption=f'<b>𝗛𝗶 🤠 {query.from_user.mention}</b>\n\n<b>🔖 𝗡𝗔𝗠𝗘 :</b><code> {title}</code>\n<b>💾 𝗦𝗜𝗭𝗘 :</b> {size}\n\n\n<b>╭─── • ❰ 𝗝𝗢𝗜𝗡  𝗛𝗘𝗥𝗘 ❱ • ──➣\n┣ 🎞 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 : @Hithaishi_Desai\n┣ 💬 𝗚𝗥𝗢𝗨𝗣 : @HithaishiMovies_Discussion_Group\n╰───── • ◆ • ──────➣</b>',
+                        caption=f'<b>🤠 𝗛𝗶 {query.from_user.mention}</b>\n\n<b>🔖 𝗡𝗔𝗠𝗘 :</b><code> {title}</code>\n\n<b>💾 𝗦𝗜𝗭𝗘 :</b> {size}\n\n\n<b>╭─── • ❰ 𝗝𝗢𝗜𝗡  𝗛𝗘𝗥𝗘 ❱ • ──➣\n┣ 🎞 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 : @Hithaishi_Desai\n┣ 💬 𝗚𝗥𝗢𝗨𝗣 : @HithaishiMovies_Discussion_Group\n╰───── • ◆ • ──────➣</b>',
                         protect_content=True if ident == "filep" else False 
                     )
                     msg1 = await query.message.reply(
-                    f'<b>Hey 👋 {query.from_user.mention}  📫 Yᴏuʀ Fɪʟᴇ ɪꜱ Rᴇᴀᴅʏ 👇\n\n'
-                    f'<b>➤ Fɪʟᴇ ɴᴀᴍᴇ: </b><code>{title}</code>\n'
-                    f'<b>➤ sɪᴢᴇ:</b> {size}\n\n'
-                    f'<b><i>⚠️ This File Will be Deleted within 5 Mins..! ⚠️</i></b>',
+                    f'<b>🤠 𝗛𝗶 {query.from_user.mention} 💿 𝗬𝗼𝘂𝗿 𝗙𝗜𝗟𝗠 𝗶𝘀 𝗥𝗲𝗮𝗱𝘆‼️ 💿\n\n'
+                    f'<b>🔖 𝗡𝗔𝗠𝗘 : </b><code>{title}</code>\n'
+                    f'<b>💾 𝗦𝗜𝗭𝗘 :</b> {size}\n\n'
+                    f'<b>🚦 𝗔𝘂𝘁𝗼 𝗗𝗲𝗹𝗲𝘁𝗲𝘀 𝗶𝗻 5⃣ 𝗠𝗶𝗻 🚦</b>',
                     True,
                     'html',
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("📥 Click Here To Download 📥", url = ms.link)
+                                InlineKeyboardButton("📥 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 📥", url = ms.link)
                             ],
                             [
-                                InlineKeyboardButton("⚠️ Can't View the File ❓ Join Now ⚠️", url = f"{CH_LINK}")
+                                InlineKeyboardButton("⚠️ 𝗙𝗜𝗥𝗦𝗧 𝗝𝗢𝗜𝗡 ⚠️", url = f"{CH_LINK}")
                             ]
                         ]
                     )
