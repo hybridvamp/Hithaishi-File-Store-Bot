@@ -33,7 +33,7 @@ async def answer(bot, query):
     if AUTH_CHANNEL and not await is_subscribed(bot, query):
         await query.answer(results=[],
                            cache_time=0,
-                           switch_pm_text='🍄 Join My Channel or Else You Cannot USE 😂',
+                           switch_pm_text='👻 𝗛𝗘𝗬!! 𝗨𝗦𝗘 𝗚𝗥𝗢𝗨𝗣, 𝗧𝗛𝗜𝗦 𝗜𝗦 𝗙𝗢𝗥 🅐︎🅓︎🅜︎🅘︎🅝︎🅢︎ 𝗢𝗡𝗟𝗬 😎',
                            switch_pm_parameter="subscribe")
         return
 
