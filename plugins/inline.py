@@ -26,14 +26,14 @@ async def answer(bot, query):
     if not await inline_users(query):
         await query.answer(results=[],
                            cache_time=0,
-                           switch_pm_text='okDa',
+                           switch_pm_text='🔍 𝗦𝗲𝗮𝗿𝗰𝗵 𝗬𝗼𝘂𝗿 𝗢𝗪𝗡 𝗙𝗶𝗹𝗲𝘀 𝗕𝗿𝗼...',
                            switch_pm_parameter="hehe")
         return
 
     if AUTH_CHANNEL and not await is_subscribed(bot, query):
         await query.answer(results=[],
                            cache_time=0,
-                           switch_pm_text='You have to subscribe my channel to use the bot',
+                           switch_pm_text='🍄 Join My Channel or Else You Cannot USE 😂',
                            switch_pm_parameter="subscribe")
         return
 
