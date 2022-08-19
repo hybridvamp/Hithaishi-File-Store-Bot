@@ -89,8 +89,8 @@ This module only works for my admins
     STATUS_TXT = """🪄 𝗧𝗢𝗧𝗔𝗟 𝗙𝗜𝗟𝗘𝗦 : <code>{}</code>
 🪄 𝗧𝗢𝗧𝗔𝗟 𝗨𝗦𝗘𝗥𝗦 : <code>{}</code>
 🪄 𝗧𝗢𝗧𝗔𝗟 𝗖𝗛𝗔𝗧𝗦 : <code>{}</code>
-🪄 𝗨𝗦𝗘𝗗 𝗦𝗣𝗔𝗖𝗘 : <code>{}</code> 𝙼𝚒𝙱
-🪄 𝗙𝗥𝗘𝗘 𝗦𝗣𝗔𝗖𝗘 : <code>{}</code> 𝙼𝚒𝙱"""
+🪄 𝗨𝗦𝗘𝗗 𝗦𝗣𝗔𝗖𝗘 : <code>{}</code>
+🪄 𝗙𝗥𝗘𝗘 𝗦𝗣𝗔𝗖𝗘 : <code>{}</code>"""
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
