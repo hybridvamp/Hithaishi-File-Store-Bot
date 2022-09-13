@@ -409,7 +409,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🕵🏻‍♂ 𝗦𝗘𝗔𝗥𝗖𝗛', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🍿 𝗠𝗢𝗩𝗜𝗘𝗦 🍿', url='https://t.me/HITHAISHI_DESAI_CHAT')
         ], [
-            InlineKeyboardButton('📂 𝗙𝗜𝗟𝗘𝗦', callback_data='status'),
+            InlineKeyboardButton('📂 𝗙𝗜𝗟𝗘𝗦', callback_data='stats'),
             InlineKeyboardButton('🍁 𝗦𝗢𝗨𝗥𝗖𝗘', url='https://github.com/HithaishiDesai/Hithaishi-File-Store-Bot')
         ], [
             InlineKeyboardButton('🤠 𝗧𝗛𝗔𝗡𝗞𝗦 🤠', url='https://t.me/SUBINPS')
