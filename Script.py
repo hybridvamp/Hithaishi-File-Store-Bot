@@ -86,9 +86,13 @@ This module only works for my admins
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>"""
     STATUS_TXT = """🗂 𝗧𝗢𝗧𝗔𝗟 𝗙𝗜𝗟𝗘𝗦 : <code>{}</code>
+
 📇 𝗧𝗢𝗧𝗔𝗟 𝗨𝗦𝗘𝗥𝗦 : <code>{}</code>
+
 🛢 𝗧𝗢𝗧𝗔𝗟 𝗖𝗛𝗔𝗧𝗦 : <code>{}</code>
+
 🔋 𝗨𝗦𝗘𝗗 𝗦𝗣𝗔𝗖𝗘 : <code>{}</code>
+
 🪫 𝗙𝗥𝗘𝗘 𝗦𝗣𝗔𝗖𝗘 : <code>{}</code>"""
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
