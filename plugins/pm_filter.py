@@ -407,10 +407,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🤴🏻 𝗢𝗪𝗡𝗘𝗥', url='https://t.me/Hithaishi_Desai')
         ], [
             InlineKeyboardButton('🕵🏻‍♂ 𝗦𝗘𝗔𝗥𝗖𝗛', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🍿 𝗠𝗢𝗩𝗜𝗘𝗦 🍿', url='https://t.me/HithaishiMovies_Discussion_Group')
+            InlineKeyboardButton('🍿 𝗠𝗢𝗩𝗜𝗘𝗦 🍿', url='https://t.me/HITHAISHI_DESAI_CHAT')
         ], [
-            InlineKeyboardButton('👨🏻‍💻 𝗛𝗘𝗟𝗣', callback_data='help'),
-            InlineKeyboardButton('🍁 𝗔𝗕𝗢𝗨𝗧', callback_data='about')
+            InlineKeyboardButton('📂 𝗙𝗜𝗟𝗘𝗦', callback_data='status'),
+            InlineKeyboardButton('🍁 𝗦𝗢𝗨𝗥𝗖𝗘', url='https://github.com/HithaishiDesai/Hithaishi-File-Store-Bot')
+        ], [
+            InlineKeyboardButton('🤠 𝗧𝗛𝗔𝗡𝗞𝗦 🤠', url='https://t.me/SUBINPS')
+        ], [
+            InlineKeyboardButton('🎁 𝗔𝗗𝗗 𝗧𝗢 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣 🎁', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
