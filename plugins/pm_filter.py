@@ -712,7 +712,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"💿 <b>𝗤𝗨𝗘𝗥𝗬 :</b>  <code>{search}</code>"
+        cap = f"💿 <b>𝗤𝗨𝗘𝗥𝗬 :</b>  <code>{search}</code> /n<a href="https://t.me/Hithaishi_Desai">🎃 𝗝𝗢𝗜𝗡 𝗙𝗢𝗥 𝗠𝗢𝗩𝗜𝗘𝗦 🎃</a>"
     if imdb and imdb.get('poster'):
         try:
            a = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
