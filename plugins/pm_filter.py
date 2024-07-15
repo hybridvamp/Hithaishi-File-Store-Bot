@@ -30,7 +30,7 @@ BUTTONS = {}
 SPELL_CHECK = {}
 
 
-@Client.on_message((filters.group | filters.private) & filters.text & filters.incoming)
+@Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
     k = await manual_filters(client, message)
     if k == False:
@@ -712,23 +712,24 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Here is what i found for your query {search}"
+        cap = f"💿 <b>𝗤𝗨𝗘𝗥𝗬 :</b>  <code>{search}</code> \n\n[🎃 𝗝𝗢𝗜𝗡 𝗙𝗢𝗥 𝗠𝗢𝗩𝗜𝗘𝗦 🎃](https://t.me/Hithaishi_Desai)\n\n[⚠️ 𝗥𝗘𝗔𝗗 𝗥𝗨𝗟𝗘𝗦 ⚠️](https://t.me/HITHAISHI_DESAI_CHAT/77321)\n\n<b>🤴🏻 𝗥𝗘𝗤𝗨𝗘𝗦𝗧𝗘𝗗 𝗕𝗬 :</b> {message.from_user.mention} "
     if imdb and imdb.get('poster'):
         try:
-           a = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
-                                      reply_markup=InlineKeyboardMarkup(btn))
+           mama = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],reply_markup=InlineKeyboardMarkup(btn))
            await asyncio.sleep(300)
            await message.delete()
-           await a.delete()        
+           await mama.delete()        
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
         except Exception as e:
             logger.exception(e)
-            await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     else:
-        await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+        hola = await message.reply(cap, reply_markup=InlineKeyboardMarkup(btn))
+        await asyncio.sleep(300)
+        await message.delete()
+        return await hola.delete() 
     if spoll:
         await msg.message.delete()
 
